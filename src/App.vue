@@ -1,9 +1,10 @@
 <script setup>
 import HeaderArea from './components/HeaderArea.vue';
+import JumboArea from './components/JumboArea.vue';
 </script>
 
 <template>
-  <HeaderAreaVue />
+  <HeaderArea />
 </template>
 
 <style scoped lang="scss">
