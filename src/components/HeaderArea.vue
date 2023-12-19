@@ -1,10 +1,13 @@
+<!--JS/VUE-->
 <script>
 import JumboArea from './JumboArea.vue';
 export default {
     components: { JumboArea }
 }
 </script>
+<!--/JS/VUE-->
 
+<!--HTML-->
 <template>
     <!--barra superiore contatti-->
     <div class="head-bar">
@@ -23,7 +26,9 @@ export default {
 
     <JumboArea />
 </template>
+<!--/HTML-->
 
+<!--SCSS-->
 <style scoped lang="scss">
 @import "../scss/utils.scss";
 
@@ -38,3 +43,4 @@ export default {
     }
 }
 </style>
+<!--/SCSS-->

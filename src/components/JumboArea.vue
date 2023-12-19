@@ -1,4 +1,6 @@
+<!--JS/VUE-->
 <script>
+
 export default {
     data() {
         return {
@@ -25,8 +27,11 @@ export default {
         }
     }
 };
-</script>
 
+</script>
+<!--/JS/VUE-->
+
+<!--HTML-->
 <template>
     <!--jumbotron-->
     <div class="jumbo">
@@ -113,7 +118,9 @@ export default {
     </div>
     <!--/jumbotron-->
 </template>
+<!--/HTML-->
 
+<!--SCSS-->
 <style scoped lang="scss">
 @import "../scss/utils.scss";
 
@@ -161,8 +168,8 @@ nav {
 }
 
 .form {
-    margin: 11.25rem 0 0 auto;
-    margin-bottom: 11.25rem;
+    margin: 10rem 0 0 auto;
+    padding-bottom: 10rem;
     width: 500px;
 
     h5 {
@@ -198,3 +205,4 @@ nav {
     }
 }
 </style>
+<!--/SCSS-->
