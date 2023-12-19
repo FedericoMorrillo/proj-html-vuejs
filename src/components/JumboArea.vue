@@ -48,6 +48,7 @@ export default {
             </div>
             <!--/logo-->
 
+            <!--links e button-->
             <div class="flex">
 
                 <!--links-->
@@ -63,12 +64,51 @@ export default {
                 <!--/links-->
 
                 <!--button-->
-                <button>GET TOUCH</button>
+                <button class="btn btn-grey">GET IN TOUCH</button>
                 <!--/button-->
 
             </div>
+            <!--links e button-->
+
         </nav>
         <!--/Navbar-->
+
+        <!--container form-->
+        <div class="container form ">
+
+            <!--titles-->
+            <h5>FUSIONS & ACQUISITIONS</h5>
+            <h1>Insurance Consulting</h1>
+            <!--/titles-->
+
+            <!--form-->
+            <form action="#" class="flex wrap">
+
+                <!--inputs-->
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="number" placeholder="Phone">
+                <!--/inputs-->
+
+                <!--select-->
+                <select name="More-info">
+                    <option value="">More Info</option>
+                    <option value="">info1</option>
+                    <option value="">info2</option>
+                </select>
+                <!--/select-->
+
+                <!--buttons-->
+                <button class="btn btn-grey">GET IN TOUCH</button>
+                <button class="btn btn-white">READ MORE</button>
+                <!--/buttons-->
+
+            </form>
+            <!--/form-->
+
+        </div>
+        <!--/container form-->
+
 
     </div>
     <!--/jumbotron-->
@@ -76,6 +116,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../scss/utils.scss";
+
+.jumbo {
+    background-image: url("../assets/bg-6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 nav {
     padding-top: 1.25rem;
@@ -108,14 +156,45 @@ nav {
     }
 
     button {
-        width: 10.625rem;
-        padding: .75rem 1.75rem;
         margin: 0 8px 0 15px;
-        background-color: #058283;
-        border: none;
-        border-radius: .3125rem;
-        color: white;
-        font-weight: 600;
+    }
+}
+
+.form {
+    margin: 11.25rem 0 0 auto;
+    margin-bottom: 11.25rem;
+    width: 500px;
+
+    h5 {
+        color: #00a6a6;
+        margin-bottom: .9375rem;
+    }
+
+    h1 {
+        font-size: 60px;
+        color: #21333e;
+        margin-bottom: 1.25rem;
+    }
+
+    form {
+        gap: .625rem;
+
+        input {
+            border: none;
+            background-color: #ccd1d1;
+            padding: .9375rem 0 .875rem .9375rem;
+            border-radius: .3125rem
+        }
+
+        select {
+            border: none;
+            background-color: #ccd1d1;
+            padding: .9375rem 0 .875rem .9375rem;
+            border-radius: .3125rem;
+            width: 11.5rem;
+            color: #6c759a;
+
+        }
     }
 }
 </style>
