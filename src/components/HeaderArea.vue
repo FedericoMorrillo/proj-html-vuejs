@@ -12,13 +12,16 @@ export default {
     <!--barra superiore contatti-->
     <div class="head-bar">
         <div class="container flex justify-btn">
-            <div class="working-hours">Open Hours: Mon - Sat - 9:00 - 18:00</div>
+            <div class="working-hours"><span class="icon"><font-awesome-icon :icon="['fas', 'clock']" /></span>Open Hours:
+                Mon - Sat - 9:00 - 18:00</div>
             <ul class="contact flex">
-                <li class="info">+1 (305) 1234-5678</li>
-                <li class="info">hello@example.com</li>
-                <li class="info">fb</li>
-                <li class="info">twt</li>
-                <li class="info">in</li>
+                <li class="info"> <span class="icon"><font-awesome-icon :icon="['fas', 'phone']" /></span> +1 (305)
+                    1234-5678</li>
+                <li class="info"><span class="icon"><font-awesome-icon :icon="['fas', 'envelope']" /></span>
+                    hello@example.com</li>
+                <li class="info"><font-awesome-icon icon="fa-brands fa-facebook-f" /></li>
+                <li class="info"><font-awesome-icon :icon="['fab', 'twitter']" /></li>
+                <li class="info"><font-awesome-icon :icon="['fab', 'linkedin-in']" /></li>
             </ul>
         </div>
     </div>
@@ -40,6 +43,10 @@ export default {
 
     .info {
         margin: 0 .9375rem;
+    }
+
+    .icon {
+        margin-right: .3125rem;
     }
 }
 </style>
