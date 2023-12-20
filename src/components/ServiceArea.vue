@@ -63,9 +63,9 @@ export default {
 
             <!--description-->
             <div class="flex justify-btn align-center">
-                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt impedit beatae quibusdam,
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nesciunt impedit beatae quibusdam,
                     voluptatibus eum inventore, rerum aliquam dolor cumque commodi. Officiis assumenda fugit reprehenderit,
-                    cupiditate eum temporibus ratione</article>
+                    cupiditate eum temporibus ratione</p>
                 <button class="btn btn-grey">SEE ALL</button>
             </div>
             <!--/description-->
@@ -110,13 +110,13 @@ section {
     }
 
     h2 {
-        font-size: 2.1875rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
 
     }
 
     .h2-first-text {
-        color: #21333e;
+        color: $titleDarkText;
         padding: .3125rem .3125rem .3125rem 0;
     }
 
@@ -126,7 +126,8 @@ section {
         padding: .3125rem .625rem;
     }
 
-    article {
+    p {
+        font-size: $fontBase;
         width: 80%;
         color: #058283;
     }
@@ -145,6 +146,7 @@ section {
             h3 {
                 padding: 1.25rem 0;
                 font-size: 1.5rem;
+                color: $titleDarkText ;
             }
 
             .col1 {

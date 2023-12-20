@@ -80,13 +80,13 @@ section {
 
     h5 {
         font-size: .75rem;
-        color: #00a6a6;
+        color: $subtitle;
         margin-bottom: 1.25rem;
     }
 
     h2 {
         font-size: 40px;
-        color: #21333e;
+        color: $titleDarkText;
         padding: .3125rem .9375rem;
         margin-bottom: 1.25rem;
     }
@@ -98,6 +98,7 @@ section {
     }
 
     p {
+        font-size: $fontBase;
         color: #058283;
     }
 

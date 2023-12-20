@@ -81,7 +81,7 @@ export default {
 @import "../scss/variable.scss";
 
 section {
-    background-color: $background1;
+    background-color: $backgroundDark;
     color: white;
 
     .container {
@@ -94,6 +94,7 @@ section {
             margin-top: 6.25rem;
             padding-bottom: 8.125rem;
             color: $subtitle;
+            gap: 1.875rem;
 
             .box {
                 margin-top: 1.875rem;
@@ -119,7 +120,7 @@ section {
             .the {
 
                 border-radius: 5px;
-                background-color: #0e272d;
+                background-color: $backgroundTextDark;
             }
 
             h2 {
@@ -129,6 +130,7 @@ section {
             }
 
             p {
+                font-size: 1.125rem;
                 margin-top: 1.5625rem;
             }
         }

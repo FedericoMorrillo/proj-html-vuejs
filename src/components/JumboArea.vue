@@ -123,6 +123,7 @@ export default {
 <!--SCSS-->
 <style scoped lang="scss">
 @import "../scss/utils.scss";
+@import "../scss/variable.scss";
 
 .jumbo {
     background-image: url("../assets/bg-6.jpg");
@@ -142,14 +143,14 @@ nav {
 
     .logo-1 {
         background-color: #bfdcdd;
-        color: #00a6a6;
+        color: $subtitle;
         padding: .9375rem .25rem .9375rem 1.875rem;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
 
     .logo-2 {
-        color: #21333e;
+        color: $titleDarkText;
         padding: .9375rem .3125rem .9375rem .25rem;
     }
 
@@ -174,13 +175,13 @@ nav {
     width: 500px;
 
     h5 {
-        color: #00a6a6;
+        color: $subtitle;
         margin-bottom: .9375rem;
     }
 
     h1 {
         font-size: 60px;
-        color: #21333e;
+        color: $titleDarkText;
         margin-bottom: 1.25rem;
     }
 
