@@ -1,22 +1,30 @@
 <!--JS/VUE-->
 <script>
+import { faMedal } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 export default {
     data() {
         return {
             boxes: [
                 {
+                    icon: faMedal,
                     title: "Tradition",
                     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 },
                 {
+                    icon: faLock,
                     title: "Security",
                     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 },
                 {
+                    icon: faPenToSquare,
                     title: "Certificate",
                     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 },
                 {
+                    icon: faGraduationCap,
                     title: "Expertise",
                     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
                 },
@@ -61,7 +69,7 @@ export default {
 
                 <!--box-->
                 <div class="box" v-for="box in boxes">
-                    <h3>O {{ box.title }}</h3>
+                    <h3><span><font-awesome-icon :icon=box.icon class="icon" /></span> {{ box.title }}</h3>
                     <p>{{ box.desc }}</p>
                 </div>
                 <!--/box-->
@@ -79,6 +87,11 @@ export default {
 <!--SCSS-->
 <style scoped lang="scss">
 @import "../scss/variable.scss";
+
+.icon {
+    width: 1.875rem;
+    height: 1.875rem;
+}
 
 section {
     background-color: $backgroundDark;

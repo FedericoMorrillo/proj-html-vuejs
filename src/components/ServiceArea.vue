@@ -1,42 +1,49 @@
 <!--JS/VUE-->
 <script>
+import { faNetworkWired } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faChartSimple } from "@fortawesome/free-solid-svg-icons";
+import { faPlaneUp } from "@fortawesome/free-solid-svg-icons";
+import { faEarthEurope } from "@fortawesome/free-solid-svg-icons";
+import { faInbox } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default {
     data() {
         return {
             services: [
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faNetworkWired,
+                    arrow: faArrowRight,
                     name: "Audit & Assurance",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faBriefcase,
+                    arrow: faArrowRight,
                     name: "Financial Advisory",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faChartSimple,
+                    arrow: faArrowRight,
                     name: "Analytics and M&A",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faPlaneUp,
+                    arrow: faArrowRight,
                     name: "Middle Marketing",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faEarthEurope,
+                    arrow: faArrowRight,
                     name: "Legal Consulting",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
                 {
-                    icon: "icona",
-                    arrow: "arrow",
+                    icon: faInbox,
+                    arrow: faArrowRight,
                     name: "Regulatory Risk",
                     desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
                 },
@@ -76,12 +83,13 @@ export default {
                 <!--card-->
                 <div class="card flex" v-for="service in services">
                     <div class="col1">
-                        <div>{{ service.icon }}</div>
+                        <div><font-awesome-icon :icon=service.icon class="icon" />
+                        </div>
                         <h3>{{ service.name }}</h3>
                         <p>{{ service.desc }}</p>
                     </div>
                     <div class="col2">
-                        <div>{{ service.arrow }}</div>
+                        <div><font-awesome-icon class="icon arrow" :icon=service.arrow /></div>
                     </div>
                 </div>
                 <!--card-->
@@ -99,6 +107,19 @@ export default {
 <style scoped lang="scss">
 @import "../scss/variable.scss";
 @import "../scss/utils.scss";
+
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #058283;
+}
+
+.arrow {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    padding: .3125rem;
+}
 
 section {
     background-color: #eef4ed;
