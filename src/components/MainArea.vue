@@ -2,9 +2,10 @@
 <script>
 import TheCompanyArea from './TheCompanyArea.vue';
 import ServiceArea from './ServiceArea.vue';
+import ProcessManagementArea from './ProcessManagementArea.vue';
 
 export default {
-    components: { TheCompanyArea, ServiceArea }
+    components: { TheCompanyArea, ServiceArea, ProcessManagementArea }
 }
 </script>   
 <!--/JS/VUE-->
@@ -13,6 +14,7 @@ export default {
 <template>
     <TheCompanyArea />
     <ServiceArea />
+    <ProcessManagementArea />
 </template>
 <!--HTML-->
 
