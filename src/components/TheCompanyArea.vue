@@ -38,11 +38,11 @@ export default {
             <div class="col">
 
                 <!--titles-->
-                <h6>ABOUT THE NETWORK</h6>
+                <h5>ABOUT THE NETWORK</h5>
 
                 <div class="flex">
-                    <h1 class="the">The</h1>
-                    <h1>Company</h1>
+                    <h2 class="the">The</h2>
+                    <h2>Company</h2>
                 </div>
                 <!--/titles-->
 
@@ -61,7 +61,7 @@ export default {
 
                 <!--box-->
                 <div class="box" v-for="box in boxes">
-                    <h2>O {{ box.title }}</h2>
+                    <h3>O {{ box.title }}</h3>
                     <p>{{ box.desc }}</p>
                 </div>
                 <!--/box-->
@@ -86,11 +86,11 @@ section {
 
     .container {
         gap: 5rem;
-        justify-content: center;
+        justify-content: space-between;
 
 
         .col {
-            width: 40%;
+            width: 45%;
             margin-top: 6.25rem;
             padding-bottom: 8.125rem;
             color: $subtitle;
@@ -100,8 +100,9 @@ section {
 
                 max-width: 12.5rem;
 
-                h2 {
+                h3 {
                     color: white;
+                    font-size: 1.5625rem;
                 }
 
                 p {
@@ -109,7 +110,7 @@ section {
                 }
             }
 
-            h6 {
+            h5 {
                 color: $subtitle;
                 margin-bottom: 1.625rem;
                 font-size: .75rem;
@@ -121,7 +122,7 @@ section {
                 background-color: #0e272d;
             }
 
-            h1 {
+            h2 {
                 font-size: 2.5rem;
                 padding: .625rem;
                 color: white;

@@ -164,6 +164,7 @@ nav {
 
     button {
         margin: 0 8px 0 15px;
+        padding: .75rem 1.75rem;
     }
 }
 
@@ -201,6 +202,10 @@ nav {
             width: 11.5rem;
             color: #6c759a;
 
+        }
+
+        button {
+            padding: .75rem 1.75rem;
         }
     }
 }

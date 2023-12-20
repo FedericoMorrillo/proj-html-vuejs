@@ -11,6 +11,10 @@
     flex-wrap: wrap;
 }
 
+.align-center {
+    align-items: center;
+}
+
 //flex
 
 .container {
@@ -20,7 +24,6 @@
 
 //buttons
 .btn {
-    padding: .75rem 1.75rem;
     border: none;
     border-radius: .3125rem;
     cursor: pointer;

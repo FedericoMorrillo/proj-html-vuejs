@@ -1,9 +1,10 @@
 <!--JS/VUE-->
 <script>
 import TheCompanyArea from './TheCompanyArea.vue';
+import ServiceArea from './ServiceArea.vue';
 
 export default {
-    components: { TheCompanyArea }
+    components: { TheCompanyArea, ServiceArea }
 }
 </script>   
 <!--/JS/VUE-->
@@ -11,6 +12,7 @@ export default {
 <!--HTML-->
 <template>
     <TheCompanyArea />
+    <ServiceArea />
 </template>
 <!--HTML-->
 
