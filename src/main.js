@@ -28,6 +28,7 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faFacebookF,
   faTwitter,
@@ -48,7 +49,8 @@ library.add(
   faGraduationCap,
   faQuoteRight,
   faLocationDot,
-  faChevronRight
+  faChevronRight,
+  faArrowUp
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
