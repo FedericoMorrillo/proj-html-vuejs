@@ -137,13 +137,13 @@ section {
             }
 
             h2 {
-                font-size: 2.5rem;
+                font-size: $fontTitle;
                 padding: .625rem;
                 color: white;
             }
 
             p {
-                font-size: 1.125rem;
+                font-size: $fontBase;
                 margin-top: 1.5625rem;
             }
         }

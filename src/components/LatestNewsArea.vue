@@ -99,7 +99,7 @@ section {
 
     p {
         color: $subtitle;
-        font-size: 1.125rem;
+        font-size: $fontBase;
     }
 
     button {

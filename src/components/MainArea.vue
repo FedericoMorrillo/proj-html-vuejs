@@ -21,7 +21,3 @@ export default {
     <LatestNewsArea />
 </template>
 <!--HTML-->
-
-<!--SCSS-->
-<style scoped lang="scss"></style>
-<!--/SCSS-->
