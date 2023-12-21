@@ -3,6 +3,7 @@
 
 import HeaderArea from './components/HeaderArea.vue';
 import MainArea from './components/MainArea.vue';
+import FooterArea from './components/FooterArea.vue';
 
 </script>
 <!--/JS/VUE-->
@@ -11,6 +12,7 @@ import MainArea from './components/MainArea.vue';
 <template>
   <HeaderArea />
   <MainArea />
+  <FooterArea />
 </template>
 <!--/HTML-->
 
