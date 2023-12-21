@@ -3,6 +3,7 @@
 export default {
     data() {
         return {
+            showCard: 3,
             cards: [
                 {
                     name: "news-1",
@@ -19,9 +20,24 @@ export default {
                     img: "../src/assets/news-3.jpg",
                     title: "Working from home is now a trend",
                 },
+                {
+                    name: "news-4",
+                    img: "../src/assets/news-4.jpg",
+                    title: "lorem ipsum",
+                },
+                {
+                    name: "news-5",
+                    img: "../src/assets/news-5.jpg",
+                    title: "lorem ipsum lorem",
+                },
             ]
+        };
+    },
+    methods: {
+        showAllCards() {                         //condizione   true?    false?
+            this.showCard = this.showCard === this.cards.length ? 3 : this.cards.length;
         }
-    }
+    },
 }
 </script>
 <!--/JS/VUE-->
@@ -42,15 +58,15 @@ export default {
         <!--description & button-->
         <div class="flex justify-btn align-end">
             <p>Every week we publish content about what is best in the business world</p>
-            <button class="btn btn-grey">SEE ALL</button>
+            <button class="btn btn-grey" @click="showAllCards">SEE ALL</button>
         </div>
         <!--/description & button-->
 
         <!--cards box-->
         <div class="cards-box flex">
 
-            <!--cards-->
-            <div class="card" v-for="card in cards">
+            <!--cards--> <!--                           --> <!--partenza/fine-->
+            <div class="card" v-for="(card, index) in cards.slice(0, showCard)">
 
                 <!--img-->
                 <img :src="card.img" :alt="card.name">
