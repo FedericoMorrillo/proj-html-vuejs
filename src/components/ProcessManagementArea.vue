@@ -85,7 +85,7 @@ section {
     }
 
     h2 {
-        font-size: 40px;
+        font-size: $fontTitle;
         color: $titleDarkText;
         padding: .3125rem .9375rem;
         margin-bottom: 1.25rem;

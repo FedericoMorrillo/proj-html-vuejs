@@ -131,7 +131,7 @@ section {
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: $fontTitle;
         margin-bottom: 20px;
 
     }

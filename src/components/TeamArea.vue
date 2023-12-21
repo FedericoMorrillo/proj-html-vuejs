@@ -165,7 +165,7 @@ section {
         }
 
         h2 {
-            font-size: 40px;
+            font-size: $fontTitle;
             color: white;
             padding: .3125rem .625rem;
             margin: 1.25rem 0;
