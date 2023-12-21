@@ -19,5 +19,6 @@ import FooterArea from './components/FooterArea.vue';
 <!--SCSS-->
 <style scoped lang="scss">
 @import "../src/scss/general.scss";
+@import "../src/scss/typography.scss";
 </style>
 <!--/SCSS-->

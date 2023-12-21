@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import "./scss/general.scss";
 import "./scss/utils.scss";
 import "./scss/variable.scss";
+import "./scss/typography.scss";
 import App from "./App.vue";
 
 //fontawesome
@@ -25,6 +26,8 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 library.add(
   faFacebookF,
   faTwitter,
@@ -43,7 +46,9 @@ library.add(
   faLock,
   faPenToSquare,
   faGraduationCap,
-  faQuoteRight
+  faQuoteRight,
+  faLocationDot,
+  faChevronRight
 );
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
